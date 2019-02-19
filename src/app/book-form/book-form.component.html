@@ -1,0 +1,15 @@
+<div class="new-book">
+
+  <div class="new-book--content">
+    <mat-form-field>
+      <textarea matInput [(ngModel)]="book.name" placeholder="Enter book name"></textarea>
+    </mat-form-field>
+
+    <div class="new-book--toogle">
+      <mat-slide-toggle [(ngModel)]="book.favorite">Favorite</mat-slide-toggle>
+    </div>
+  </div>
+
+  <button mat-button (click)="saveBook()">{{book.id ? 'Save changes' : 'Add book'}}</button>
+
+</div>

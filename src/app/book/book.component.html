@@ -1,0 +1,11 @@
+<div class="book-component">
+  <button class="book-component--favorite" mat-button>
+    <i class="material-icons" (click)="toggleFavorite()">
+      {{book.favorite ? 'favorite' : 'favorite_border'}}
+    </i>
+  </button>
+  <button class="book-component--content" mat-button (click)="editBook(this.book)" routerLink="/edit-book">
+    <div>{{book.name}}</div>
+  </button>
+</div>
+

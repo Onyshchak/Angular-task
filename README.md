@@ -1,3 +1,7 @@
+## Start JSON Server
+
+json-server --watch db.json
+
 # AngularTask
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
